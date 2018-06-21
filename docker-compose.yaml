@@ -6,7 +6,7 @@ services:
     image: "yvent_v2"
     build: .
     ports:
-      - "8009:8181"
+      - "127.0.0.1:9001:8000"
     volumes:
       - .:/app
     env_file: .env
@@ -14,3 +14,4 @@ services:
     command: bash -c 'php artisan migrate && php artisan serve --host 0.0.0.0'
     extra_hosts:
      - "localhost:192.168.56.1"
+
