@@ -6,5 +6,6 @@ RUN docker-php-ext-install pdo pdo_pgsql pgsql sockets
 RUN a2enmod rewrite
 WORKDIR /app
 COPY . /app
+RUN composer update --no-scripts 
 RUN composer install
 EXPOSE 9001
