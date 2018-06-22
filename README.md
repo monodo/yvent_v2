@@ -15,6 +15,10 @@ git clone https://github.com/maltaesousa/yvent_v2.git yvent
 
 ## DOCKER
 
+*Note for windows 10 users*
+
+After windows 10 restart, you might need to restart docker: https://github.com/docker/for-win/issues/1038 
+
 *To setup the app inside a docker container*
 
 ```
